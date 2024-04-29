@@ -307,19 +307,21 @@
         </div>
         <div class="flex w-full gap-10">
             <div class="w-2/3">
-                <div class="flex gap-10">
-                    <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="text"
-                        placeholder="Your Name">
-                    <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="email"
-                        placeholder="Your Email">
-                </div>
-                <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-full mt-5" type="text"
-                    placeholder="Subject">
-                <textarea class="bg-brown text-b2 placeholder-b2 rounded-3xl mt-5 w-full px-5 py-4" cols="30" rows="8"
-                    placeholder="Message"></textarea>
-                <button class="border-2 border-brown text-b3 rounded-full px-8 py-4 mt-5 font-bold">
-                    Send Message
-                </button>
+                <form class="w-2/3" id="emailForm">
+                    <div class="flex gap-10">
+                        <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="text"
+                            id="name" placeholder="Your Name">
+                        <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="email"
+                        id="email" placeholder="Your Email">
+                    </div>
+                    <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-full mt-5" type="text"
+                    id="subject" placeholder="Subject">
+                    <textarea class="bg-brown text-b2 placeholder-b2 rounded-3xl mt-5 w-full px-5 py-4" cols="30" rows="8"
+                    id="message" placeholder="Message"></textarea>
+                    <button class="border-2 border-brown text-b3 rounded-full px-8 py-4 mt-5 font-bold" onclick="sendEmail()">
+                        Send Message
+                    </button>
+                </form>
             </div>
             <div class="w-1/3">
                 <h1 class="text-b3 font-bold text text-2xl text-center">Connect With Me !</h1>
@@ -393,7 +395,20 @@
             },
             speed: 1000,
         });
-
+    </script>
+    <script>
+        function sendEmail() {
+            var senderName = document.getElementById('name').value;
+            var senderEmail = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            
+            var emailUrl = 'mailto:saepulloha133@gmail.com' + 
+                            '?subject=' + encodeURIComponent(subject) +
+                            '&body=' + encodeURIComponent(message);
+            
+            window.location.href = emailUrl;
+            }
     </script>
 
 </html>
