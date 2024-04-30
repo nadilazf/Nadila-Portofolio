@@ -60,18 +60,18 @@
                 <img src="src/img/logo.png" width="100">
             </div>
             <div class="hidden lg:block ">
-                <ul class="flex gap-8 px-6 text-white">
+                <ul class="flex gap-8 px-6 nav-menu">
                     <li>
-                        <a href="#home">Home</a>
+                        <a class=" text-white" href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a class=" text-white" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a class=" text-white" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a class=" text-white" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +91,8 @@
                     <p class="text-xl mb-8">
                         -be a dreamer and be brave-
                     </p>
-                    <a class="bg-white text-brown rounded-full px-10 py-2" href="#contact">
+                    <a class="bg-white text-brown rounded-full px-10 py-2 hover:border hover:border-white hover:bg-transparent hover:text-white duration-500"
+                        href="#contact">
                         Hire Me
                     </a>
                 </div>
@@ -118,9 +119,17 @@
                     skills with Laravel framework and experience in planning, developing and testing web applications.
                     My good communication skills also enable me to contribute effectively in a team environment.
                 </p>
-                <a class="bg-brown text-white rounded-full px-5 py-2 mt-5 mr-[365px] flex items-center"
+                <a class="bg-brown text-white rounded-full px-5 py-2 mt-5 mr-[365px] flex items-center hover:border hover:border-brown hover:bg-transparent hover:text-brown hover:font-bold duration-500  group"
                     href="src/file/Nadila Zari Fani_Resume.pdf" download>
-                    <img src="src/img/download.png" alt="" class="w-8 mr-2">
+                    <svg class="w-8 mr-2 fill-white group-hover:fill-brown duration-500" viewBox="0 0 50 50"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.4688 34.4873H26.8506V22.6562C26.8506 22.4414 26.6749 22.2656 26.46 22.2656H23.5303C23.3155 22.2656 23.1397 22.4414 23.1397 22.6562V34.4873H19.5313C19.2042 34.4873 19.0235 34.8633 19.2237 35.1172L24.6924 42.0361C24.729 42.0828 24.7757 42.1206 24.829 42.1465C24.8823 42.1725 24.9408 42.186 25.0001 42.186C25.0593 42.186 25.1179 42.1725 25.1711 42.1465C25.2244 42.1206 25.2711 42.0828 25.3077 42.0361L30.7764 35.1172C30.9766 34.8633 30.796 34.4873 30.4688 34.4873Z" />
+                        <path
+                            d="M39.6191 17.9053C37.3828 12.0068 31.6846 7.8125 25.0098 7.8125C18.335 7.8125 12.6367 12.002 10.4004 17.9004C6.21582 18.999 3.125 22.8125 3.125 27.3438C3.125 32.7393 7.49512 37.1094 12.8857 37.1094H14.8438C15.0586 37.1094 15.2344 36.9336 15.2344 36.7188V33.7891C15.2344 33.5742 15.0586 33.3984 14.8438 33.3984H12.8857C11.2402 33.3984 9.69238 32.7441 8.54004 31.5576C7.39258 30.376 6.78223 28.7842 6.83594 27.1338C6.87988 25.8447 7.31934 24.6338 8.11523 23.6133C8.93066 22.5732 10.0732 21.8164 11.3428 21.4795L13.1934 20.9961L13.8721 19.209C14.292 18.0957 14.8779 17.0557 15.6152 16.1133C16.3431 15.1792 17.2053 14.3582 18.1738 13.6768C20.1807 12.2656 22.5439 11.5186 25.0098 11.5186C27.4756 11.5186 29.8389 12.2656 31.8457 13.6768C32.8174 14.3604 33.6768 15.1807 34.4043 16.1133C35.1416 17.0557 35.7275 18.1006 36.1475 19.209L36.8213 20.9912L38.667 21.4795C41.3135 22.1924 43.1641 24.5996 43.1641 27.3438C43.1641 28.96 42.5342 30.4834 41.3916 31.626C40.8313 32.1896 40.1647 32.6364 39.4305 32.9407C38.6963 33.2449 37.909 33.4005 37.1143 33.3984H35.1562C34.9414 33.3984 34.7656 33.5742 34.7656 33.7891V36.7188C34.7656 36.9336 34.9414 37.1094 35.1562 37.1094H37.1143C42.5049 37.1094 46.875 32.7393 46.875 27.3438C46.875 22.8174 43.7939 19.0088 39.6191 17.9053Z" />
+                    </svg>
+
+                    <!-- <img src="src/img/download.svg" alt="" class="w-8 mr-2"> -->
                     <h1>Download CV</h1>
                 </a>
             </div>
@@ -214,7 +223,9 @@
                 <div class="w-1/2 text-xl">
                     <p>APLIKASI PELAPORAN PENGADUAN MASYARAKAT adalah layanan masyarakat yang berfungsi menampung
                         laporan dan keluhanan dari masyarakat kepada instansi terkait yang bertanggung jawab atas
-                        keluhan tersebut. Aplikasi ini dibuat dengan bahasa pemrograman PHP dan Laravel sebagai frameworknya. Dengan Aplikasi ini diharapkan dapat memudahkan dalam mengatasi masalah di lingkungan
+                        keluhan tersebut. Aplikasi ini dibuat dengan bahasa pemrograman PHP dan Laravel sebagai
+                        frameworknya. Dengan Aplikasi ini diharapkan dapat memudahkan dalam mengatasi masalah di
+                        lingkungan
                         masyarakat. </p>
                 </div>
                 <div class="flex w-2/3 justify-end">
@@ -261,10 +272,12 @@
                                     <img src="src/img/login-tasklist.png" alt="" class="object-cover w-full h-full">
                                 </div>
                                 <div class="swiper-slide w-full h-full">
-                                    <img src="src/img/forgot-password-tasklist.png" alt="" class="object-cover w-full h-full">
+                                    <img src="src/img/forgot-password-tasklist.png" alt=""
+                                        class="object-cover w-full h-full">
                                 </div>
                                 <div class="swiper-slide w-full h-full">
-                                    <img src="src/img/Reset-password-tasklist.png" alt="" class="object-cover w-full h-full">
+                                    <img src="src/img/Reset-password-tasklist.png" alt=""
+                                        class="object-cover w-full h-full">
                                 </div>
                                 <div class="swiper-slide w-full h-full">
                                     <img src="src/img/user-tasklist.png" alt="" class="object-cover w-full h-full">
@@ -279,7 +292,8 @@
                                     <img src="src/img/project-tasklist.png" alt="" class="object-cover w-full h-full">
                                 </div>
                                 <div class="swiper-slide w-full h-full">
-                                    <img src="src/img/description-tasklist.png" alt="" class="object-cover w-full h-full">
+                                    <img src="src/img/description-tasklist.png" alt=""
+                                        class="object-cover w-full h-full">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -312,13 +326,14 @@
                         <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="text"
                             id="name" placeholder="Your Name">
                         <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="email"
-                        id="email" placeholder="Your Email">
+                            id="email" placeholder="Your Email">
                     </div>
                     <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-full mt-5" type="text"
-                    id="subject" placeholder="Subject">
-                    <textarea class="bg-brown text-b2 placeholder-b2 rounded-3xl mt-5 w-full px-5 py-4" cols="30" rows="8"
-                    id="message" placeholder="Message"></textarea>
-                    <button class="border-2 border-brown text-b3 rounded-full px-8 py-4 mt-5 font-bold" onclick="sendEmail()">
+                        id="subject" placeholder="Subject">
+                    <textarea class="bg-brown text-b2 placeholder-b2 rounded-3xl mt-5 w-full px-5 py-4" cols="30"
+                        rows="8" id="message" placeholder="Message"></textarea>
+                    <button class="border-2 border-brown text-b3 rounded-full px-8 py-4 mt-5 font-bold hover:bg-brown hover:text-white duration-500 hover:font-light"
+                        onclick="sendEmail()">
                         Send Message
                     </button>
                 </form>
@@ -402,13 +417,40 @@
             var senderEmail = document.getElementById('email').value;
             var subject = document.getElementById('subject').value;
             var message = document.getElementById('message').value;
-            
-            var emailUrl = 'mailto:saepulloha133@gmail.com' + 
-                            '?subject=' + encodeURIComponent(subject) +
-                            '&body=' + encodeURIComponent(message);
-            
-            window.location.href = emailUrl;
-            }
-    </script>
 
+            var emailUrl = 'mailto:saepulloha133@gmail.com' +
+                '?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(message);
+
+            window.location.href = emailUrl;
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll(".nav-menu a");
+            
+            function setActiveLink() {
+                var currentPath = window.location.hash;
+                console.log(currentPath)
+                links.forEach(function(link) {
+                    console.log(link)
+                    var href = link.getAttribute("href");
+                    if (currentPath === href) {
+                        link.classList.add("text-b2");
+                        link.classList.remove("text-white");
+                    } else {
+                        link.classList.add("text-white");
+                        link.classList.remove("text-b2");
+                    }
+                });
+            }
+        
+            setActiveLink();
+        
+            window.addEventListener("hashchange", function() {
+                setActiveLink();
+            });
+        });
+        </script>
+        
 </html>

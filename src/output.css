@@ -787,6 +787,10 @@ video {
   background-repeat: no-repeat;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -929,8 +933,57 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 html{
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hover\:border:hover {
+  border-width: 1px;
+}
+
+.hover\:border-brown:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(62 50 50 / var(--tw-border-opacity));
+}
+
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.hover\:bg-brown:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 50 50 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:font-light:hover {
+  font-weight: 300;
+}
+
+.hover\:text-brown:hover {
+  --tw-text-opacity: 1;
+  color: rgb(62 50 50 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:fill-brown {
+  fill: #3E3232;
 }
 
 @media (min-width: 1024px) {
