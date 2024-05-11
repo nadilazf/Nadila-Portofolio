@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -54,41 +54,46 @@
 
 <body>
     <!-- home section start -->
-    <nav class="px-20 py-5 bg-brown w-screen fixed z-10">
-        <div class="flex justify-between items-center text-lg">
+    <nav class="px-5 lg:px-20 md:py-5 py-3 bg-brown w-screen fixed z-10 ">
+        <div class="flex justify-between items-center text-lg relative">
             <div>
                 <img src="src/img/logo.png" width="100">
             </div>
-            <div class="hidden lg:block ">
-                <ul class="flex gap-8 px-6 nav-menu">
-                    <li>
-                        <a class=" text-white" href="#home">Home</a>
+            <button id="hamburger" name="hamburger" type="button" class="block absolute lg:hidden right-5">
+                <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+            <div class="hidden lg:block lg:static lg:w-auto lg:h-auto items-center right-5 lg:py-0 lg:right-0 top-full bg-white w-[250px] h-max lg:bg-transparent absolute"
+                id="nav-menu">
+                <ul class="lg:flex block gap-8 px-6 nav-menu">
+                    <li class="lg:py-0 py-3">
+                        <a class=" lg:text-white text-[#3E3232]" href="#home">Home</a>
                     </li>
-                    <li>
-                        <a class=" text-white" href="#about">About</a>
+                    <li class="lg:py-0 py-3">
+                        <a class=" lg:text-white text-[#3E3232]" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class=" text-white" href="#portfolio">Portfolio</a>
+                    <li class="lg:py-0 py-3">
+                        <a class=" lg:text-white text-[#3E3232]" href="#portfolio">Portfolio</a>
                     </li>
-                    <li>
-                        <a class=" text-white" href="#contact">Contact</a>
+                    <li class="lg:py-0 py-3">
+                        <a class=" lg:text-white text-[#3E3232]" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="h-screen" id="home">
-        <div class="h-[600px] bg-bottom bg-no-repeat bg-cover p-20"
-            style="background-image: url('src/img/homebg.png');">
-            <div class="flex items-center justify-between">
-                <div class="text-white w-1/2">
-                    <h1 class="font-bold text-5xl leading-tight tracking-wider">
-                        Hallo <br /> I'm Nadila
+    <section class="lg:min-h-screen" id="home">
+        <div class="lg:h-[700px] lg:bg-left-bottom md:bg-bottom bg-bottom bg-no-repeat md:bg-cover lg:p-20 p-5 md:h-[670px] h-[650px] bg-[length:100%_100%] bg-mobile lg:bg-laptop">
+            <div class="flex flex-col-reverse items-center lg:justify-between lg:flex-row text-center lg:text-start">
+                <div class="text-white lg:w-1/2 w-full mt-5 lg:mt-0">
+                    <h1 class="font-bold lg:text-5xl text-2xl leading-tight tracking-wider">
+                        Hello <br /> I'm Nadila Zari Fani
                     </h1>
-                    <p class="text-xl mt-4 mb-1">
+                    <p class="lg:text-xl text-lg mt-4 mb-1">
                         A Web Developer and System Analyst
                     </p>
-                    <p class="text-xl mb-8">
+                    <p class="lg:text-xl text-lg mb-8">
                         -be a dreamer and be brave-
                     </p>
                     <a class="bg-white text-brown rounded-full px-10 py-2 hover:border hover:border-white hover:bg-transparent hover:text-white duration-500"
@@ -96,8 +101,8 @@
                         Hire Me
                     </a>
                 </div>
-                <div class="mt-10 w-1/2 flex justify-end">
-                    <img src="src/img/foto.png" width="400">
+                <div class="lg:mt-10 mt-20 lg:w-1/2 w-full flex lg:justify-end justify-center">
+                    <img src="src/img/foto.png" class="lg:w-[400px] w-[200px]">
                 </div>
             </div>
         </div>
@@ -105,21 +110,21 @@
     <!-- home section end -->
 
     <!-- about section start -->
-    <section class="p-20" id="about">
-        <div class="text-brown font-bold text-4xl text-center mb-10">
+    <section class="lg:px-20 lg:py-32 pt-24 px-5" id="about">
+        <div class="text-brown font-bold lg:text-4xl text-2xl text-center mb-10 ">
             <h1>
                 Who Am I ?
             </h1>
         </div>
-        <div class="flex justify-between gap-20">
-            <div class="w-1/2">
-                <p class="text-justify text-2xl">
+        <div class="flex flex-col lg:flex-row justify-between lg:gap-20 gap-10">
+            <div class="lg:w-1/2 w-full">
+                <p class="text-justify lg:text-2xl text-lg">
                     My name is Nadila Zari Fani, as a graduate of SMK Wikrama Bogor majoring in software engineering, I
                     have a strong interest in working in the field of software development. I have PHP programming
                     skills with Laravel framework and experience in planning, developing and testing web applications.
                     My good communication skills also enable me to contribute effectively in a team environment.
                 </p>
-                <a class="bg-brown text-white rounded-full px-5 py-2 mt-5 mr-[365px] flex items-center hover:border hover:border-brown hover:bg-transparent hover:text-brown hover:font-bold duration-500  group"
+                <a class="bg-brown text-white rounded-full px-5 py-2 mt-5 lg:mr-[365px] lg:w-1/2 w-max flex items-center justify-center hover:border hover:border-brown hover:bg-transparent hover:text-brown hover:font-bold duration-500  group"
                     href="src/file/Nadila Zari Fani_Resume.pdf" download>
                     <svg class="w-8 mr-2 fill-white group-hover:fill-brown duration-500" viewBox="0 0 50 50"
                         xmlns="http://www.w3.org/2000/svg">
@@ -133,22 +138,23 @@
                     <h1>Download CV</h1>
                 </a>
             </div>
-            <div class="w-1/2 min-h-[400px] bg-brown rounded-xl">
-                <div class="flex flex-wrap justify-around w-full h-full text-xl text-b2">
+            <div class="lg:w-1/2 w-full lg:min-h-[300px] bg-brown rounded-xl py-8">
+                <div
+                    class="flex flex-wrap justify-around w-full h-full md:text-xl text-md text-b2 items-center gap-y-8 lg:gap-y-0">
                     <div class="text-center w-1/2 h-1/2 flex flex-col items-center justify-center">
-                        <img src="src/img/prog.png" alt="" class="h-[90px]">
+                        <img src="src/img/prog.png" alt="" class="md:h-[90px] h-[70px]">
                         <h1>Programming</h1>
                     </div>
                     <div class="text-center w-1/2 h-1/2 flex flex-col items-center justify-center">
-                        <img src="src/img/test.png" alt="" class="h-[90px]">
+                        <img src="src/img/test.png" alt="" class="md:h-[90px] h-[70px]">
                         <h1>Testing</h1>
                     </div>
                     <div class="text-center w-1/2 h-1/2 flex flex-col items-center justify-center">
-                        <img src="src/img/comm.png" alt="" class="h-[90px]">
+                        <img src="src/img/comm.png" alt="" class="md:h-[90px] h-[70px]">
                         <h1>Communication</h1>
                     </div>
                     <div class="text-center w-1/2 h-1/2 flex flex-col items-center justify-center">
-                        <img src="src/img/analys.png" alt="" class="h-[90px]">
+                        <img src="src/img/analys.png" alt="" class="md:h-[90px] h-[70px]">
                         <h1>Analysis</h1>
                     </div>
                 </div>
@@ -158,16 +164,17 @@
     <!-- about section end -->
 
     <!-- portfolio section start -->
-    <section class="p-20" id="portfolio">
-        <div class="text-brown font-bold text-4xl text-center mb-10">
+    <section class="lg:px-20 lg:py-32 pt-24 px-5" id="portfolio">
+        <div class="text-brown font-bold lg:text-4xl text-2xl text-center mb-10">
             <h1>
                 My Portfolio
             </h1>
         </div>
         <div class="w-full text-justify">
-            <div class="flex items-center mb-32">
-                <div class="w-2/3">
-                    <div class="absolute w-[600px] h-[350px] mt-10 ml-10">
+            <div class="flex flex-col lg:flex-row items-center mb-20 lg:mb-32">
+                <div class="flex lg:w-2/3 w-full items-center justify-center lg:justify-start lg:items-start">
+                    <div
+                        class="absolute lg:w-[600px] lg:h-[350px] px-8 lg:px-0 lg:py-0 py-3 lg:mt-10 lg:ml-10 w-full h-[280px] ">
                         <div class="swiper mySwiper rounded-xl shadow-xl w-full h-full">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide w-full h-full">
@@ -210,17 +217,17 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="border-brown border-[3px] rounded-xl w-[600px] h-[350px]"></div>
+                    <div class="border-brown border-[3px] rounded-xl lg:w-[600px] lg:h-[350px] w-full h-[280px]"></div>
                 </div>
-                <div class="w-1/2 text-xl">
+                <div class="lg:w-1/2 text-xl mt-8 lg:mt-0">
                     <p>WIFI PAYMENT AUTOMATION dibuat dengan framework laravel dan terintegrasi dengan midtrans untuk
                         memudahkan dalam proses transaksi pembayaran layanan internet. Website ini juga terintegrasi
                         dengan WhatsApp untuk berinteraksi dengan pelanggan dan mengirimkan notifikasi tagihan setiap
                         bulannya.</p>
                 </div>
             </div>
-            <div class="flex items-center mb-20">
-                <div class="w-1/2 text-xl">
+            <div class="flex flex-col-reverse lg:flex-row items-center mb-20 lg:mb-32">
+                <div class="lg:w-1/2 w-full text-xl mt-8 lg:mt-0">
                     <p>APLIKASI PELAPORAN PENGADUAN MASYARAKAT adalah layanan masyarakat yang berfungsi menampung
                         laporan dan keluhanan dari masyarakat kepada instansi terkait yang bertanggung jawab atas
                         keluhan tersebut. Aplikasi ini dibuat dengan bahasa pemrograman PHP dan Laravel sebagai
@@ -228,8 +235,9 @@
                         lingkungan
                         masyarakat. </p>
                 </div>
-                <div class="flex w-2/3 justify-end">
-                    <div class="absolute w-[600px] h-[350px] mt-10 mr-10">
+                <div class="flex lg:w-2/3 w-full lg:justify-end justify-center items-center lg:items-start">
+                    <div
+                        class="absolute lg:w-[600px] lg:h-[350px] px-8 lg:px-0 py-3 lg:py-0 w-full h-[280px] lg:mt-10 lg:mr-10">
                         <div class="swiper mySwiper rounded-xl shadow-xl w-full h-full">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide w-full h-full">
@@ -260,12 +268,13 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="border-brown border-[3px] rounded-xl w-[600px] h-[350px]"></div>
+                    <div class="border-brown border-[3px] rounded-xl lg:w-[600px] lg:h-[350px] w-full h-[280px]"></div>
                 </div>
             </div>
-            <div class="flex items-center mb-32">
-                <div class="w-2/3">
-                    <div class="absolute w-[600px] h-[350px] mt-10 ml-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="flex lg:w-2/3 w-full items-center justify-center">
+                    <div
+                        class="absolute lg:w-[600px] lg:h-[350px] px-8 lg:px-0 py-3 lg:py-0 lg:mt-10 lg:ml-10 w-full h-[280px]">
                         <div class="swiper mySwiper rounded-xl shadow-xl w-full h-full">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide w-full h-full">
@@ -299,13 +308,13 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="border-brown border-[3px] rounded-xl w-[600px] h-[350px]"></div>
+                    <div class="border-brown border-[3px] rounded-xl lg:w-[600px] lg:h-[350px] w-full h-[280px]"></div>
                 </div>
-                <div class="w-1/2 text-xl">
-                    <p>WIFI PAYMENT AUTOMATION dibuat dengan framework laravel dan terintegrasi dengan midtrans untuk
-                        memudahkan dalam proses transaksi pembayaran layanan internet. Website ini juga terintegrasi
-                        dengan WhatsApp untuk berinteraksi dengan pelanggan dan mengirimkan notifikasi tagihan setiap
-                        bulannya.</p>
+                <div class="lg:w-1/2 text-xl mt-8 lg:mt-0">
+                    <p>SISTEM MANAGEMENT TASKLIST dirancang untuk memantau dan mengelola project serta pembagian tugas.
+                        Aplikasi ini dikembangkan dengan bahasa pemrograman Javascript dan PHP dengan framework Laravel.
+                        Ditambah dengan fitur notifikasi untuk Change Password melalui Email untuk verifikasi dan fitur
+                        Reset Password melalui Email.</p>
                 </div>
             </div>
         </div>
@@ -313,62 +322,64 @@
     <!-- portfolio section end -->
 
     <!-- contact section start -->
-    <section class="p-20" id="contact">
-        <div class="text-brown font-bold text-4xl text-center mb-10">
+    <section class="lg:px-20 px-5 lg:py-32 py-24" id="contact">
+        <div class="text-brown font-bold lg:text-4xl text-2xl text-center lg:mb-10">
             <h1>
                 Contact Me
             </h1>
         </div>
-        <div class="flex w-full gap-10">
-            <div class="w-2/3">
-                <form class="w-2/3" id="emailForm">
-                    <div class="flex gap-10">
-                        <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="text"
+        <div class="flex flex-col-reverse lg:flex-row w-full justify-center lg:justify-between lg:gap-20 gap-5 ">
+            <div class="lg:w-3/5 xl:w-2/5 w-full">
+                <form class="w-full" id="emailForm">
+                    <div class="flex lg:flex-row flex-col lg:gap-4 gap-5">
+                        <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 lg:w-1/2 w-full" type="text"
                             id="name" placeholder="Your Name">
-                        <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-1/2" type="email"
+                        <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 lg:w-1/2 w-full" type="email"
                             id="email" placeholder="Your Email">
                     </div>
                     <input class="bg-brown text-b2 placeholder-b2 rounded-full px-5 py-4 w-full mt-5" type="text"
                         id="subject" placeholder="Subject">
                     <textarea class="bg-brown text-b2 placeholder-b2 rounded-3xl mt-5 w-full px-5 py-4" cols="30"
-                        rows="8" id="message" placeholder="Message"></textarea>
-                    <button class="border-2 border-brown text-b3 rounded-full px-8 py-4 mt-5 font-bold hover:bg-brown hover:text-white duration-500 hover:font-light"
+                        rows="5" id="message" placeholder="Message"></textarea>
+                    <button
+                        class="border-2 border-brown text-b3 rounded-full px-8 py-4 mt-5 font-bold hover:bg-brown hover:text-white duration-500 hover:font-light"
                         onclick="sendEmail()">
                         Send Message
                     </button>
                 </form>
             </div>
-            <div class="w-1/3">
-                <h1 class="text-b3 font-bold text text-2xl text-center">Connect With Me !</h1>
-                <p class="text-brown pt-5 text-justify">Feel free to get in touch with me. I am always available for
+            <div class="lg:w-2/5 w-full">
+                <h1 class="text-b3 font-bold text lg:text-2xl text-lg text-center lg:block hidden">Connect With Me !</h1>
+                <p class="text-brown lg:py-5 py-3 text-justify ">Feel free to get in touch with me. I am always available for
                     freelance or opportunity to be part of your vision.</p>
-                <div class="flex items-center gap-3 pt-5">
-                    <div class="w-12">
+                <div class="flex items-center gap-3">
+                    <div class="lg:w-12 w-10">
                         <img src="src/img/telp.png" alt="">
                     </div>
                     <div class="">
-                        <h1 class="text-b3">CALL ME</h1>
+                        <h1 class="text-b3 lg:block hidden">CALL ME</h1>
                         <h1 class="text-brown">+62 821 2388 8550</h1>
                     </div>
                 </div>
-                <div class="flex items-center gap-3 pt-5">
-                    <div class="w-12">
+                <div class="flex items-center gap-3 lg:pt-5 pt-3">
+                    <div class="lg:w-12 w-10">
                         <img src="src/img/email.png" alt="">
                     </div>
                     <div class="">
-                        <h1 class="text-b3">MAIL ME</h1>
+                        <h1 class="text-b3 lg:block hidden">MAIL ME</h1>
                         <h1 class="text-brown">nadilazarifani506@gmail.com</h1>
                     </div>
                 </div>
-                <div class="flex items-center gap-3 pt-5">
-                    <div class="w-12">
+                <div class="flex items-center gap-3 lg:pt-5 pt-3">
+                    <div class="lg:w-12 w-10">
                         <img src="src/img/loc.png" alt="">
                     </div>
                     <div class="">
-                        <h1 class="text-b3">LOCATION</h1>
+                        <h1 class="text-b3 lg:block hidden">LOCATION</h1>
                         <h1 class="text-brown">Bogor, West Java, Indonesia</h1>
                     </div>
                 </div>
+                <h1 class="text-b3 font-bold text lg:text-2xl text-lg text-center lg:hidden mt-5 ">Connect With Me !</h1>
             </div>
         </div>
     </section>
@@ -418,7 +429,7 @@
             var subject = document.getElementById('subject').value;
             var message = document.getElementById('message').value;
 
-            var emailUrl = 'mailto:saepulloha133@gmail.com' +
+            var emailUrl = 'mailto:nadilazarifani506@gmail.com' +
                 '?subject=' + encodeURIComponent(subject) +
                 '&body=' + encodeURIComponent(message);
 
@@ -426,31 +437,50 @@
         }
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var links = document.querySelectorAll(".nav-menu a");
-            
+
             function setActiveLink() {
                 var currentPath = window.location.hash;
                 console.log(currentPath)
-                links.forEach(function(link) {
+                links.forEach(function (link) {
                     console.log(link)
                     var href = link.getAttribute("href");
                     if (currentPath === href) {
                         link.classList.add("text-b2");
-                        link.classList.remove("text-white");
+                        link.classList.remove("lg:text-white");
+                        link.classList.remove("text-[#3E3232]");
                     } else {
-                        link.classList.add("text-white");
+                        link.classList.add("lg:text-white");
                         link.classList.remove("text-b2");
+                        link.classList.remove("text-[#3E3232]");
                     }
                 });
             }
-        
+
             setActiveLink();
-        
-            window.addEventListener("hashchange", function() {
+
+            window.addEventListener("hashchange", function () {
                 setActiveLink();
             });
         });
-        </script>
-        
+    </script>
+
+    <script>
+        const hamburger = document.querySelector("#hamburger");
+        const navMenu = document.querySelector("#nav-menu");
+
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("hamburger-active");
+            navMenu.classList.toggle("hidden");
+        });
+
+        window.addEventListener("click", function (e) {
+            if (e.target != hamburger && e.tager != navMenu) {
+                hamburger.classList.remove("hamburger-active");
+                navMenu.classList.add("hidden");
+            }
+        });
+    </script>
+
 </html>
